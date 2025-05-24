@@ -1,3 +1,4 @@
+//
 GLOBAL_LIST_EMPTY(cached_songs)
 
 ///Default override for echo
@@ -65,7 +66,7 @@ falloff_distance - Distance at which falloff begins. Sound is at peak volume (in
 
 	if(!ignore_walls) // these sounds don't carry through walls
 		listeners = listeners & hearers(audible_distance, turf_source)
-		
+
 	else
 		var/turf/above_turf = GET_TURF_ABOVE(turf_source)
 
