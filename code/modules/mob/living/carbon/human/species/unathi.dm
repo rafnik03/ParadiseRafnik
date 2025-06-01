@@ -1,8 +1,11 @@
 /datum/species/unathi
 	name = SPECIES_UNATHI
 	name_plural = "Unathi"
-	icobase = 'icons/mob/human_races/r_lizard.dmi'
-	deform = 'icons/mob/human_races/r_def_lizard.dmi'
+	icobase = 'icons/mob/human_races/monkeys/r_stok.dmi'
+	deform = 'icons/mob/human_races/monkeys/r_stok.dmi'
+	damage_overlays = 'icons/mob/human_races/masks/dam_monkey.dmi'
+	damage_mask = 'icons/mob/human_races/masks/dam_mask_monkey.dmi'
+	blood_mask = 'icons/mob/human_races/masks/blood_monkey.dmi'
 	language = LANGUAGE_UNATHI
 	tail = "sogtail"
 	speech_sounds = list('sound/voice/unathitalk.mp3', 'sound/voice/unathitalk2.mp3', 'sound/voice/unathitalk4.mp3')
@@ -76,7 +79,7 @@
 		BODY_ZONE_PRECISE_R_HAND = list("path" = /obj/item/organ/external/hand/right),
 		BODY_ZONE_PRECISE_L_FOOT = list("path" = /obj/item/organ/external/foot),
 		BODY_ZONE_PRECISE_R_FOOT = list("path" = /obj/item/organ/external/foot/right),
-		BODY_ZONE_TAIL = list("path" = /obj/item/organ/external/tail/unathi),
+		BODY_ZONE_TAIL = list("path" = /obj/item/organ/external/tail/monkey/unathi),
 	)
 
 	allowed_consumed_mobs = list(/mob/living/simple_animal/mouse, /mob/living/simple_animal/lizard, /mob/living/simple_animal/chick, /mob/living/simple_animal/chicken,
