@@ -526,6 +526,20 @@
 	force = 0
 	throwforce = 0
 	var/praying = FALSE
+	var/used = FALSE
+
+/obj/item/nullrod/rosary/attack_self(mob/user)
+	if(!user.mind || !user.mind.isholy)
+		to_chat(user, "Вы не знаете, что делать с этим")
+		return
+
+	if(tgui_alert(user, "Вы хотите использовать способность? Использовать можно только один раз!", "Взор бога", list("Да", "Нет")) != "Да")
+		return
+
+	if(used)
+		return
+
+	used = TRUE
 
 /obj/item/nullrod/rosary/New()
 	..()
