@@ -1,8 +1,8 @@
 /datum/species/vulpkanin
 	name = SPECIES_VULPKANIN
 	name_plural = "Vulpkanin"
-	icobase = 'icons/mob/human_races/r_vulpkanin.dmi'
-	deform = 'icons/mob/human_races/r_vulpkanin.dmi'
+	icobase = 'icons/mob/human_races/monkeys/r_wolpin.dmi'
+	deform = 'icons/mob/human_races/monkeys/r_wolpin.dmi'
 	language = LANGUAGE_VULPKANIN
 	primitive_form = /datum/species/monkey/vulpkanin
 	tail = "vulptail"
@@ -56,7 +56,7 @@
 		BODY_ZONE_PRECISE_R_HAND = list("path" = /obj/item/organ/external/hand/right),
 		BODY_ZONE_PRECISE_L_FOOT = list("path" = /obj/item/organ/external/foot),
 		BODY_ZONE_PRECISE_R_FOOT = list("path" = /obj/item/organ/external/foot/right),
-		BODY_ZONE_TAIL = list("path" = /obj/item/organ/external/tail/vulpkanin),
+		BODY_ZONE_TAIL = list("path" = /obj/item/organ/external/tail/monkey/vulpkanin),
 	)
 
 	allowed_consumed_mobs = list(/mob/living/simple_animal/mouse, /mob/living/simple_animal/lizard, /mob/living/simple_animal/chick, /mob/living/simple_animal/chicken,
